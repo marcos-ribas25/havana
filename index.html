@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="keywords" content="" />
-    <meta name="description" content="descri��o" />
+    <meta name="description" content="descriçãoo" />
     <meta property="og:title" content="Juliano Aguilar" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:type" content="website" />
@@ -70,7 +70,10 @@
     <link href="./styles/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/skm2hzt.css">
     <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="./styles/responsive/1400.css">
+    <link rel="stylesheet" href="./styles/responsive/1200.css">
     <link rel="stylesheet" href="./styles/responsive/1024.css">
+    <link rel="stylesheet" href="./styles/responsive/768.css">
     <link rel="stylesheet" href="./styles/responsive/656.css">
     <link rel="stylesheet" href="./styles/responsive/450.css">
     <link rel="stylesheet" href="./styles/responsive/350.css">
@@ -79,33 +82,29 @@
 </head>
 
 <body>
-    <div class="menu">
-        <div class="background">
+    <div class="background-menu"></div>
 
-        </div>
-
-        <div class="box">
-            <ul>
-                <li>
-                    <a class="box-link link-1-regular-roc uppercase" href="index.html">home</a>
-                </li>
-                <li>
-                    <a class="box-link link-1-regular-roc uppercase" href="">sobre nóS</a>
-                </li>
-                <li>
-                    <a class="box-link link-1-regular-roc uppercase" href="sobre.html">serviços</a>
-                </li>
-                <li>
-                    <a class="box-link link-1-regular-roc uppercase" href="">eventos</a>
-                </li>
-                <li>
-                    <a class="box-link link-1-regular-roc uppercase" href="">agenda</a>
-                </li>
-                <li>
-                    <a class="box-link link-1-regular-roc uppercase" href="">contato</a>
-                </li>
-            </ul>
-        </div>
+    <div class="box-menu">
+        <ul>
+            <li>
+                <a class="box-link link-1-regular-roc uppercase" href="index.html">home</a>
+            </li>
+            <li>
+                <a class="box-link link-1-regular-roc uppercase" href="">sobre nóS</a>
+            </li>
+            <li>
+                <a class="box-link link-1-regular-roc uppercase" href="sobre.html">serviços</a>
+            </li>
+            <li>
+                <a class="box-link link-1-regular-roc uppercase" href="">eventos</a>
+            </li>
+            <li>
+                <a class="box-link link-1-regular-roc uppercase" href="">agenda</a>
+            </li>
+            <li>
+                <a class="box-link link-1-regular-roc uppercase" href="">contato</a>
+            </li>
+        </ul>
     </div>
 
     <header>
@@ -130,6 +129,8 @@
     <section id="banner">
         <div class="bg" style="background-image: url(imagens/home-banner.jpg);">
             <div class="container-havana">
+                <div></div>
+
                 <div class="text">
                     <h1 class="titulo-1-bold-roc uppercase">Transforme seu evento em uma experiência inesquecível</h1>
 
@@ -154,21 +155,65 @@
         </div>
     </section>
 
-    <section id="sobre">
+    <section class="background-generic">
         <div class="bg" style="background-image: url(imagens/home-sobre.jpg);">
             <div class="container-havana">
-                <h2 class="titulo-2-bold-roc uppercase">união de detalhes que compõem uma experiência única</h2>
-                <p class="paragrafo-3-regular-roc">Nossa equipe conta com bartenders especializados para produzir drinks de alta qualidade em poucos
-                    segundos. Mais do que cocktails, entregamos uma experiência única em coquetelaria. São dezenas de opções
-                    que combinam produtos e insumos de altíssima qualidade, atendendo a um padrão elevado de bar.</p>
-                <p></p>
-                <p class="paragrafo-3-regular-roc"> Oferecemos uma ampla carta de drinks para você escolher as opções que mais combinam com a sua festa e
-                    comemorar sua ocasião da melhor forma!
-                </p>
-                <a class="bt full escuro link-2-regular-roc uppercase" href="">saiba mais sobre o havana</a>
+                <div class="text">
+                    <h2 class="titulo-2-bold-roc uppercase">união de detalhes que compõem uma experiência única</h2>
+
+                    <p class="paragrafo-3-regular-roc">
+                        Nossa equipe conta com bartenders especializados para produzir drinks de alta qualidade em poucos
+                        segundos. Mais do que cocktails, entregamos uma experiência única em coquetelaria. São dezenas de opções
+                        que combinam produtos e insumos de altíssima qualidade, atendendo a um padrão elevado de bar.
+                        <br/> <br/>
+                        Oferecemos uma ampla carta de drinks para você escolher as opções que mais combinam com a sua festa e
+                        comemorar sua ocasião da melhor forma!
+                    </p>
+
+                    <a class="bt full escuro link-2-regular-roc uppercase" href="">saiba mais sobre o havana</a>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- <section class="background-generic margin-title-grande">
+        <div class="bg" style="background-image: url(imagens/imagem-TESTE-1.jpg);">
+            <div class="container-havana">
+                <div class="text">
+                    <h2 class="titulo-2-bold-roc uppercase">união de detalhes que compõem uma experiência única</h2>
+
+                    <p class="paragrafo-3-regular-roc">
+                        Nossa equipe conta com bartenders especializados para produzir drinks de alta qualidade em poucos
+                        segundos. Mais do que cocktails, entregamos uma experiência única em coquetelaria. São dezenas de opções
+                        que combinam produtos e insumos de altíssima qualidade, atendendo a um padrão elevado de bar.
+                        <br/> <br/>
+                        Oferecemos uma ampla carta de drinks para você escolher as opções que mais combinam com a sua festa e
+                        comemorar sua ocasião da melhor forma!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="background-generic margin-title-grande align-left">
+        <div class="bg" style="background-image: url(imagens/imagem-TESTE-2.jpg);">
+            <div class="container-havana">
+                <div class="text">
+                    <h2 class="titulo-2-bold-roc uppercase">união de detalhes que compõem uma experiência única</h2>
+
+                    <p class="paragrafo-3-regular-roc">
+                        Nossa equipe conta com bartenders especializados para produzir drinks de alta qualidade em poucos
+                        segundos. Mais do que cocktails, entregamos uma experiência única em coquetelaria. São dezenas de opções
+                        que combinam produtos e insumos de altíssima qualidade, atendendo a um padrão elevado de bar.
+                        <br/> <br/>
+                        Oferecemos uma ampla carta de drinks para você escolher as opções que mais combinam com a sua festa e
+                        comemorar sua ocasião da melhor forma!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
 
     <section class="galeria">
 

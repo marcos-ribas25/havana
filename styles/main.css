@@ -52,7 +52,7 @@ ul {
 .date-mask {
   display: block;
 }
-[class*='container-havana'] {
+[class*="container-havana"] {
   max-width: 1335px;
   width: 100%;
   padding-left: 15px;
@@ -72,7 +72,7 @@ body {
   justify-content: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   letter-spacing: 3.2px;
-  padding: 21px 0;
+  padding-top: 3px;
 }
 .bt.full {
   max-width: 430px;
@@ -81,9 +81,15 @@ body {
   color: #fff;
   background-color: var(--vermelho);
 }
+.bt.escuro:hover {
+  background-color: #a40324;
+}
 .bt.claro {
   background-color: #fff;
   color: var(--vermelho);
+}
+.bt.claro:hover {
+  background-color: #f1f0f0;
 }
 .bt.transparente {
   background-color: transparent;
@@ -92,62 +98,57 @@ body {
 .bt.radius {
   border-radius: 5px;
 }
-.menu {
+.background-menu {
   position: fixed;
-  height: 100vh;
-  justify-content: flex-end;
-  width: 100%;
-  z-index: -1;
-  display: none;
-}
-.menu .background {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-  cursor: pointer;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 0.1s;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
 }
-.menu .box {
+.background-menu.ativo {
+  z-index: 3;
+  opacity: 1;
+  transition: 0.1s;
+  visibility: unset;
+}
+.box-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
   background-color: var(--vermelho);
-  display: none;
-  position: relative;
-  z-index: 2;
-  width: 25vhv;
-  padding: 80px 40px 0;
-}
-.menu .box .box-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 30px;
+  transform: translateX(100%);
+  -webkit-transition: 0.3s all;
+  z-index: 4;
   color: #fff;
 }
-.menu .box li + li {
-  margin-top: 10px;
+.box-menu a {
+  color: currentColor;
 }
-.menu .box,
-.menu .background {
-  height: inherit;
+.box-menu li + li {
+  margin-top: 15px;
 }
-.menu.ativo {
-  z-index: 100;
-  display: flex;
-}
-.menu.ativo .background {
-  display: block;
-}
-.menu.ativo .background:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  transition: 0.3s;
-}
-.menu.ativo .box {
-  display: block;
-  background-color: var(--vermelho);
+.box-menu.ativo {
+  transform: translateX(0);
+  transition: 0.3s all;
 }
 header {
   text-align: center;
   padding-top: 40px;
-  max-height: 135px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 2;
 }
 header .logo {
@@ -167,6 +168,22 @@ header .logo + * {
 header nav a {
   color: #fff;
   letter-spacing: 3.6px;
+  position: relative;
+}
+header nav a:hover {
+  color: #fff;
+}
+header nav a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+header nav a:hover::after {
+  width: 100%;
 }
 header nav a + * {
   margin-left: 65px;
@@ -188,27 +205,23 @@ header .block-bar div + div {
 header .block-bar {
   display: none;
 }
-#banner {
-  margin-top: -175px;
-}
 #banner .bg {
   width: 100%;
-  height: 100vh;
-  min-height: 800px;
+  min-height: 100vh;
+  padding-top: 168px;
+  padding-bottom: 25px;
   background-size: cover;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   position: relative;
   z-index: 1;
   background-position: top;
-  padding-bottom: 25px;
+  display: flex;
+  background-attachment: fixed;
 }
 #banner .bg::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.4) 100%);
   opacity: 0.5;
   position: absolute;
   top: 0;
@@ -218,20 +231,24 @@ header .block-bar {
   text-align: center;
   position: relative;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 #banner .container-havana .text {
-  margin-bottom: 170px;
+  margin-bottom: 25px;
 }
 #banner .container-havana .text h1 {
   max-width: 1024px;
   color: #fff;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  line-height: 80px;
+  line-height: 1.25;
   margin-bottom: 0;
   margin: 0 auto;
 }
 #banner .container-havana .text h1 + * {
-  margin-top: 60px;
+  margin-top: 5.56vh;
 }
 #banner .container-havana .text .buttons a {
   margin: 0 auto;
@@ -240,18 +257,32 @@ header .block-bar {
   margin-top: 20px;
 }
 #banner .container-havana .scroll {
+  display: inline-flex;
+  align-items: center;
   color: #fff;
   line-height: 24px;
-  margin: 0 auto;
-  justify-content: center;
-  width: 16px;
+  animation: scroll 2s infinite linear forwards;
 }
 #banner .container-havana .scroll svg {
-  max-width: 100%;
+  max-width: 16px;
   max-height: 16px;
-  fill: #fff;
+  height: auto;
+  width: auto;
+  fill: currentColor;
+  margin-right: 5px;
 }
-#sobre .bg {
+@keyframes scroll {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.background-generic .bg {
   width: 100%;
   min-height: 800px;
   background-size: contain;
@@ -262,8 +293,8 @@ header .block-bar {
   z-index: 1;
   background-position: center;
 }
-#sobre .bg::after {
-  content: '';
+.background-generic .bg::after {
+  content: "";
   width: 100%;
   height: 100%;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
@@ -271,11 +302,25 @@ header .block-bar {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
-#sobre .bg .container-havana h2 {
+.background-generic .bg .text {
+  position: relative;
+  z-index: 2;
+  max-width: 660px;
+  margin: 0 0 0 auto;
+  color: #fff;
+}
+.background-generic .bg .container-havana h2 {
   max-width: 600px;
   color: #fff;
   line-height: 64px;
+}
+.background-generic.margin-title-grande h2 {
+  margin-bottom: 60px;
+}
+.background-generic.align-left .text {
+  margin: 0 auto 0 0;
 }
 footer {
   background-color: #1e1e1e;

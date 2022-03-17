@@ -1,14 +1,16 @@
 $(document).ready(function () {
    const blockbar = document.querySelector('.block-bar');
-   const menu = document.querySelector('.menu');
-   const backgroundmenu = document.querySelector('.menu .background');
+   const BoxMenu = document.querySelector('.box-menu');
+   const backgroundMenu = document.querySelector('.background-menu');
 
    blockbar.onclick = function () {
-      menu.classList.add('ativo');
+      backgroundMenu.classList.add('ativo');
+      BoxMenu.classList.add('ativo');
    };
 
-   backgroundmenu.onclick = function () {
-      menu.classList.remove('ativo');
+   backgroundMenu.onclick = function () {
+      backgroundMenu.classList.remove('ativo');
+      BoxMenu.classList.remove('ativo');
    };
 
    if ($('.cep-mask').length > 0) {
