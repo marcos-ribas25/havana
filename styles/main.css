@@ -223,7 +223,7 @@ header .block-bar {
   margin-bottom: 170px;
 }
 #banner .container-havana .text h1 {
-  max-width: 923px;
+  max-width: 1024px;
   color: #fff;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   line-height: 80px;
@@ -250,6 +250,32 @@ header .block-bar {
   max-width: 100%;
   max-height: 16px;
   fill: #fff;
+}
+#sobre .bg {
+  width: 100%;
+  min-height: 800px;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+  background-position: center;
+}
+#sobre .bg::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#sobre .bg .container-havana h2 {
+  max-width: 600px;
+  color: #fff;
+  line-height: 64px;
 }
 footer {
   background-color: #1e1e1e;
