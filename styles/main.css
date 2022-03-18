@@ -284,16 +284,79 @@ header .block-bar {
 }
 .background-generic .bg {
   width: 100%;
+  background-size: cover;
   min-height: 800px;
-  background-size: contain;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   position: relative;
   z-index: 1;
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 .background-generic .bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.background-generic .bg .text {
+  position: relative;
+  z-index: 2;
+  max-width: 685px;
+  margin: 0 0 0 auto;
+  color: #fff;
+}
+.background-generic .bg .text a {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.background-generic .bg .container-havana h2 {
+  color: #fff;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+.background-generic .bg .container-havana h2 + * {
+  margin-top: 35px;
+}
+.background-generic .bg .container-havana p + * {
+  margin-top: 35px;
+}
+.background-generic ul li {
+  display: flex;
+  align-items: center;
+}
+.background-generic ul li svg {
+  max-width: 16px;
+  height: 16px;
+  width: 100%;
+  object-fit: contain;
+  margin-right: 13px;
+  padding-bottom: 2px;
+}
+.background-generic ul + * {
+  margin-top: 42px;
+}
+.background-generic.margin-title-grande h2 {
+  margin-bottom: 60px;
+}
+.background-generic.align-left .text {
+  margin: 0 auto 0 0;
+}
+#galeria {
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#galeria::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -304,23 +367,31 @@ header .block-bar {
   left: 0;
   z-index: 1;
 }
-.background-generic .bg .text {
+#galeria .container-havana {
+  padding-bottom: 180px;
   position: relative;
   z-index: 2;
-  max-width: 660px;
-  margin: 0 0 0 auto;
+}
+#galeria .container-havana .contador {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
   color: #fff;
 }
-.background-generic .bg .container-havana h2 {
-  max-width: 600px;
-  color: #fff;
+#galeria .container-havana span {
   line-height: 64px;
 }
-.background-generic.margin-title-grande h2 {
-  margin-bottom: 60px;
+#galeria .container-havana span + * {
+  margin-top: 7px;
 }
-.background-generic.align-left .text {
-  margin: 0 auto 0 0;
+#galeria .container-havana p {
+  margin-bottom: 0;
+}
+#galeria .container-havana .contador + * {
+  margin-top: 125px;
+}
+#galeria .container-havana a {
+  margin: 0 auto;
 }
 footer {
   background-color: #1e1e1e;
@@ -362,22 +433,5 @@ footer .barra-footer .container-juliano {
   justify-content: flex-end;
 }
 @media only screen and (max-width: 1200px) {
-  #sobre {
-    padding: 90px 6.93vw 45px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  #sobre .container-sobre {
-    padding: 70px 30px 0;
-  }
-  #sobre .container-sobre .text {
-    text-align: center;
-  }
-  #sobre .container-sobre .text .link {
-    margin-right: 0;
-    margin: 75px auto 80px;
-  }
-  #sobre .text-bottom {
-    justify-content: center;
-  }
+  @import "responsive/1200.css";
 }

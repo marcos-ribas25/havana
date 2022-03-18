@@ -1,5 +1,5 @@
 @media only screen and (max-width: 450px) {
-  #banner .bt.full {
+  .bt.full {
     max-width: 315px;
     height: 40px;
   }

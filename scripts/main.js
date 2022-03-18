@@ -37,3 +37,5 @@ $(document).ready(function () {
       $('.phone-mask').mask(SPMaskBehavior, spOptions);
    }
 });
+
+new PureCounter();

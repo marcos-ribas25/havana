@@ -169,6 +169,9 @@ td {
   [class*='titulo-1'] {
     font-size: 40px;
   }
+  [class*='titulo-2'] {
+    font-size: 37px;
+  }
   [class*='paragrafo-1'] {
     font-size: 17px;
   }
@@ -185,6 +188,9 @@ td {
 @media only screen and (max-width: 768px) {
   [class*='titulo-1'] {
     font-size: 32px;
+  }
+  [class*='titulo-2'] {
+    font-size: 31px;
   }
 }
 @media only screen and (max-width: 450px) {
