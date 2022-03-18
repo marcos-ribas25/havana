@@ -63,7 +63,7 @@ ul {
 }
 
 [class*="container-havana"] {
-  max-width: 1335px;
+  max-width: 1355px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -109,9 +109,12 @@ body {
   background-color: #f1f0f0;
 }
 
-.bt.transparente {
+.bt.transparent {
   background-color: transparent;
   color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .bt.radius {
@@ -402,6 +405,7 @@ header {
       align-items: center;
 
       svg {
+        fill: #fff;
         max-width: 16px;
         height: 16px;
         width: 100%;
@@ -480,6 +484,274 @@ header {
 
     a {
       margin: 0 auto;
+    }
+  }
+}
+
+#degustacao {
+  display: flex;
+  max-height: 800px;
+
+  .image {
+    width: 100%;
+
+    img {
+      width:100%;
+      object-fit: cover;
+    }
+  }
+
+  .text {
+    width: 100%;
+    background-color: var(--vermelho);
+    display: flex;
+    align-items: center;
+
+    .box-text {
+      max-width: 500px;
+      margin-left: 130px;
+      color: #fff;
+    }
+
+    h2 {
+      line-height: 1.25;
+      margin-bottom: 0;
+    }
+
+    h2 + * {
+      margin-top: 35px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 10px;
+        fill: #fff;
+      }
+
+      span {
+        padding-top: 3px;
+      }
+    }
+  }
+}
+
+#redes {
+  display: flex;
+  max-height: 800px;
+
+  .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 65px;
+
+    img {
+      max-width: 32.03vw;
+      max-height: 88.75vw;
+      height: inherit;
+      object-fit: contain;
+    }
+  }
+
+  .text {
+    width: 100%;
+    background-color: var(--vermelho);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .box-text {
+      max-width: 510px;
+      margin-right: 166px;
+      color: #fff;
+    }
+
+    h2 {
+      line-height: 1.25;
+    }
+
+    h2, p {
+      margin-bottom: 0;
+    }
+
+    h2 + * {
+      margin-top: 35px;
+    }
+
+    p + * {
+      margin-top: 35px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 10px;
+        fill: #fff;
+      }
+
+      span {
+        padding-top: 3px;
+      }
+    }
+    
+    a + * {
+      margin-top: 20px;
+    }
+  }
+}
+
+#feedback {
+  .bg {
+    width: 100%;
+    background-size: cover;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  .container-havana {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+
+    h2, h3, p {
+      margin-bottom: 0;
+    }
+
+    h2 + * {
+      margin-top: 30px;
+    }
+
+    .box-feedback {
+      display: flex;
+      justify-content: space-between;
+
+      .box {
+        max-width: 430px;
+        padding: 75px 50px 80px;
+        background-color: var(--azul);
+
+        p {
+          line-height: 24px;
+          text-align: left;
+        }
+
+        p + * {
+          margin-top: 25px;
+        }
+
+        h3 {
+          line-height: 24px;
+        }
+
+        h3 + * {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .box + .box {
+      margin-left: 10px;
+    }
+  }
+}
+
+#contato {
+  display: flex;
+  max-height: 800px;
+
+  .image {
+    width: 100%;
+
+    img {
+      width:100%;
+      object-fit: cover;
+    }
+  }
+
+  .text {
+    width: 100%;
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+
+    .box-text {
+      width: 606px;
+      min-height: 440px;
+      background-repeat: no-repeat;
+      color: var(--azul);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position:relative;
+
+
+        .image-absolute {
+          max-width: 212px;
+          max-height: 203px;
+          height: inherit;
+          object-fit: contain;
+
+          position: absolute;
+          top: -115px;
+        }
+      
+
+      .image + * {
+        margin-top: 15px;
+      }
+
+      .content {
+        text-align: center;
+
+        h2, p {
+          margin-bottom: 0;
+        }
+
+        h2 {
+          line-height: 64px;
+        }
+
+        p {
+          line-height: 24px;
+          width: 335px;
+          margin: 0 auto;
+        }
+
+        a {
+          margin: 0 auto;
+        }
+
+        p + * {
+          margin-top: 20px;
+        }
+      }
     }
   }
 }
