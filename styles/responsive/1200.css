@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1200px) {
+  .bt.full {
+    max-width: 375px;
+  }
+  .sumir {
+    display: none !important;
+  }
+  .aparecer {
+    display: block;
+  }
+  #degustacao .text .box-text {
+    margin-left: 80px;
+  }
+  #redes .text .box-text {
+    max-width: 400px;
+    margin-right: 60px;
+  }
+  #feedback .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 30px;
+  }
+  #feedback .container-havana .aparecer {
+    margin-top: 30px;
+  }
+  #feedback .container-havana h2 {
+    text-align: center;
+  }
+  #feedback .container-havana .box-feedback {
+    flex-direction: column;
+  }
+  #contato .text .box-text {
+    min-width: 450px;
+    min-height: 325px;
+  }
+  #contato .text .box-text .image-absolute {
+    max-width: 135px;
+    top: -65px;
+  }
+}

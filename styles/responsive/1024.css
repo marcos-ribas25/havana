@@ -3,7 +3,7 @@
     max-width: 315px;
   }
   .bt.full {
-    max-width: 375px;
+    max-width: 325px;
   }
   header {
     display: flex;
@@ -61,5 +61,24 @@
   #servicos .container-havana {
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+  .text-image {
+    text-align: -webkit-center;
+  }
+  .text-image .image {
+    display: none !important;
+  }
+  .text-image .text {
+    padding: 50px 20px;
+    justify-content: center !important;
+  }
+  .text-image .text .box-text {
+    margin: 0 !important;
+  }
+  #degustacao .text {
+    background-color: var(--azul);
+  }
+  #contato .text {
+    padding: 90px 30px 30px;
   }
 }

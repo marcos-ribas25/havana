@@ -12,4 +12,12 @@
   #sobre .bg {
     min-height: 600px;
   }
+  #contato .text .box-text {
+    min-width: 420px;
+    min-height: 305px;
+  }
+  #contato .text .box-text .image-absolute {
+    max-width: 120px;
+    top: -55px;
+  }
 }

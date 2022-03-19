@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1700px) {
+  #contato .text .box-text {
+    min-width: 480px;
+    min-height: 355px;
+  }
+  #contato .text .box-text .image-absolute {
+    max-width: 150px;
+    top: -65px;
+  }
+}
