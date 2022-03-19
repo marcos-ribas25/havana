@@ -21,4 +21,7 @@
   #servicos .text a {
     margin: 35px auto 0;
   }
+  #feedback .bg {
+    min-height: 765px;
+  }
 }
