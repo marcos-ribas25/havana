@@ -3,4 +3,8 @@
     max-width: 450px;
     margin-right: 115px;
   }
+  #feedback .container-havana .box-feedback .box {
+    margin: 0 auto;
+    padding: 60px 40px 70px;
+  }
 }

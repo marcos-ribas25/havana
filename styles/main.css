@@ -105,7 +105,7 @@ body {
   display: block;
 }
 .aparecer {
-  display: none!important;
+  display: none;
 }
 .background-menu {
   position: fixed;
@@ -697,9 +697,12 @@ footer .barra-footer .container-havana .box-left a + * {
 #equipe .container-havana .grid-equipe .card-equipe img + * {
   margin-top: 25px;
 }
-#equipe .container-havana .grid-equipe .card-equipe h2,
+#equipe .container-havana .grid-equipe .card-equipe h3,
 #equipe .container-havana .grid-equipe .card-equipe p {
   margin-bottom: 0;
+}
+#equipe .container-havana .grid-equipe .card-equipe p {
+  max-width: 386px;
 }
 @media only screen and (max-width: 1200px) {
   @import "responsive/1200.css";
