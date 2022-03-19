@@ -126,7 +126,7 @@
   }
 
   .aparecer {
-    display: none!important;
+    display: none;
   }
 
   .background-menu {
@@ -844,7 +844,7 @@
         margin-right: 150px;
         max-width: 545px;
 
-        h2 + * {
+        h2+* {
           margin-top: 78px;
         }
       }
@@ -853,6 +853,7 @@
 
   #equipe {
     background-color: var(--azul);
+
     .container-havana {
       color: #fff;
       text-align: center;
@@ -871,17 +872,18 @@
             object-fit: cover;
           }
 
-          img + * {
+          img+* {
             margin-top: 25px;
           }
 
-          h2, p {
+          h3,
+          p {
             margin-bottom: 0;
           }
 
           p {
             max-width: 386px;
-            
+
           }
         }
       }
