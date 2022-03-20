@@ -14,34 +14,21 @@ $(document).ready(function () {
    };
 
    $('.owl-feedback').owlCarousel({
-      stagePadding: 100,
       loop:true,
       margin:20,
       nav:false,
       items: 2,
-      center:true,
       responsive  : {
          0: {
             items: 1,
             margin: 20,
-            stagePadding: 0,
-         },
-         656: {
-            items: 2,
-            margin: 10,
-            stagePadding: 25
          },
          768: {
             items: 2,
             margin: 20,
-            stagePadding: 50
-         },
-         1100: {
-            items: 2,
-            margin: 10
          },
          1200: {
-            items: 2,
+            items: 3,
             margin:  20,
          }
       }

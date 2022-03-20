@@ -33,23 +33,25 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  #galeria {
+  #contador {
     align-items: center;
+    aspect-ratio: unset;
+    background-position: left;
   }
-  #galeria .container-havana {
+  #contador .container-havana {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  #galeria .container-havana .contador {
+  #contador .container-havana .contador {
     flex-direction: column;
   }
-  #galeria .container-havana .contador .box-contador p {
+  #contador .container-havana .contador .box-contador p {
     margin-top: 0;
   }
-  #galeria .container-havana .contador .box-contador + .box-contador {
+  #contador .container-havana .contador .box-contador + .box-contador {
     margin-top: 50px;
   }
-  #galeria .container-havana .contador + * {
+  #contador .container-havana .contador + * {
     margin-top: 75px;
   }
   #servicos .bg {
