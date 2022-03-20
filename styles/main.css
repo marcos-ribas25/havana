@@ -710,6 +710,47 @@ footer .barra-footer .container-havana .box-left a + * {
 #equipe .container-havana .grid-equipe .card-equipe p {
   max-width: 386px;
 }
+#sobre-interna .text {
+  background-color: var(--vermelho);
+  justify-content: flex-end;
+}
+#sobre-interna .text .box-text {
+  margin-right: 150px;
+  max-width: 545px;
+}
+#sobre-interna .text .box-text h2 + * {
+  margin-top: 78px;
+}
+#equipe {
+  background-color: var(--azul);
+}
+#equipe .container-havana {
+  color: #fff;
+  text-align: center;
+}
+#equipe .container-havana .grid-equipe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+#equipe .container-havana .grid-equipe .card-equipe {
+  max-width: 420px;
+  text-align: center;
+}
+#equipe .container-havana .grid-equipe .card-equipe img {
+  width: 100%;
+  object-fit: cover;
+}
+#equipe .container-havana .grid-equipe .card-equipe img + * {
+  margin-top: 25px;
+}
+#equipe .container-havana .grid-equipe .card-equipe h3,
+#equipe .container-havana .grid-equipe .card-equipe p {
+  margin-bottom: 0;
+}
+#equipe .container-havana .grid-equipe .card-equipe p {
+  max-width: 386px;
+}
 @media only screen and (max-width: 1200px) {
   @import "responsive/1200.css";
 }

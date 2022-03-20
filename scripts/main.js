@@ -23,9 +23,9 @@ $(document).ready(function () {
             items: 1,
             margin: 20,
          },
-         768: {
+         1100: {
             items: 2,
-            margin: 20,
+            margin: 10
          },
          1200: {
             items: 3,

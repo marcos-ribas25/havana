@@ -901,6 +901,63 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  @import "./responsive/1200.css";
-}
+  // Interna SOBRE
+
+  #sobre-interna {
+    .text {
+      background-color: var(--vermelho);
+      justify-content: flex-end;
+
+      .box-text {
+        margin-right: 150px;
+        max-width: 545px;
+
+        h2+* {
+          margin-top: 78px;
+        }
+      }
+    }
+  }
+
+  #equipe {
+    background-color: var(--azul);
+
+    .container-havana {
+      color: #fff;
+      text-align: center;
+
+      .grid-equipe {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+        .card-equipe {
+          max-width: 420px;
+          text-align: center;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+
+          img+* {
+            margin-top: 25px;
+          }
+
+          h3,
+          p {
+            margin-bottom: 0;
+          }
+
+          p {
+            max-width: 386px;
+
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    @import "./responsive/1200.css";
+  }
