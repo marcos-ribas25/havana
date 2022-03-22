@@ -34,6 +34,8 @@ $(document).ready(function () {
       }
   })
 
+
+
    if ($('.cep-mask').length > 0) {
       $('.cep-mask').mask('99.999-999');
    }
@@ -60,3 +62,4 @@ $(document).ready(function () {
 });
 
 new PureCounter();
+
