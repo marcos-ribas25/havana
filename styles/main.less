@@ -1,7 +1,8 @@
+@import "./fonts";
+
 :root {
   --vermelho: #d1002b;
   --azul: #022a50;
-  ;
 }
 
 html {
@@ -12,7 +13,6 @@ body {
   background: url(../images/background-body.jpg);
   overflow-x: hidden !important;
   position: relative;
-
 }
 
 *:target,
@@ -204,7 +204,7 @@ body {
     color: currentColor;
   }
 
-  li+li {
+  li + li {
     margin-top: 15px;
   }
 }
@@ -234,7 +234,7 @@ header {
     }
   }
 
-  .logo+* {
+  .logo + * {
     margin-top: 3.7vh;
   }
 
@@ -263,7 +263,7 @@ header {
       width: 100%;
     }
 
-    a+* {
+    a + * {
       margin-left: clamp(40px, 6vh, 65px);
     }
   }
@@ -280,7 +280,7 @@ header {
       width: 100%;
     }
 
-    div+div {
+    div + div {
       margin-top: 7px;
     }
   }
@@ -325,9 +325,11 @@ header {
       content: "";
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(360deg,
-          #000000 0%,
-          rgba(0, 0, 0, 0.4) 100%);
+      background-image: linear-gradient(
+        360deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      );
       opacity: 0.5;
       position: absolute;
       top: 0;
@@ -356,7 +358,7 @@ header {
         margin: 0 auto;
       }
 
-      h1+* {
+      h1 + * {
         margin-top: 5.56vh;
       }
 
@@ -365,7 +367,7 @@ header {
           margin: 0 auto;
         }
 
-        a+* {
+        a + * {
           margin-top: 20px;
         }
       }
@@ -425,7 +427,11 @@ header {
       content: "";
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+      background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
       position: absolute;
       top: 0;
       left: 0;
@@ -454,11 +460,11 @@ header {
         margin-bottom: 0;
       }
 
-      h2+* {
+      h2 + * {
         margin-top: 35px;
       }
 
-      p+* {
+      p + * {
         margin-top: 35px;
       }
     }
@@ -483,14 +489,14 @@ header {
     }
   }
 
-  ul+* {
+  ul + * {
     margin-top: 42px;
   }
 }
 
 .background-generic.margin-title-grande {
   .container-havana {
-    h2+* {
+    h2 + * {
       margin-top: 90px;
     }
   }
@@ -520,9 +526,11 @@ header {
     content: "";
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.3) 100%);
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -546,7 +554,7 @@ header {
       line-height: 64px;
     }
 
-    span+* {
+    span + * {
       margin-top: 7px;
     }
 
@@ -554,7 +562,7 @@ header {
       margin-bottom: 0;
     }
 
-    .contador+* {
+    .contador + * {
       margin-top: 6.51vw;
     }
 
@@ -587,11 +595,11 @@ header {
     margin-bottom: 0;
   }
 
-  h2+* {
+  h2 + * {
     margin-top: 35px;
   }
 
-  p+* {
+  p + * {
     margin-top: 35px;
   }
 
@@ -609,7 +617,7 @@ header {
     }
   }
 
-  a+* {
+  a + * {
     margin-top: 20px;
   }
 }
@@ -632,8 +640,6 @@ header {
     z-index: 1;
     background-position: top;
     background-repeat: no-repeat;
-
-
   }
 
   .container-havana {
@@ -647,7 +653,7 @@ header {
       margin-bottom: 0;
     }
 
-    h2+* {
+    h2 + * {
       margin-top: 30px;
     }
 
@@ -665,7 +671,7 @@ header {
           text-align: left;
         }
 
-        p+* {
+        p + * {
           margin-top: 25px;
         }
 
@@ -673,13 +679,13 @@ header {
           line-height: 24px;
         }
 
-        h3+* {
+        h3 + * {
           margin-top: 10px;
         }
       }
     }
 
-    .box+.box {
+    .box + .box {
       margin-left: 10px;
     }
   }
@@ -715,13 +721,11 @@ header {
       margin-bottom: 0;
     }
 
-    h2+* {
+    h2 + * {
       margin-top: 35px;
     }
 
-
-
-    p+* {
+    p + * {
       margin-top: 35px;
     }
 
@@ -739,7 +743,7 @@ header {
       }
     }
 
-    a+* {
+    a + * {
       margin-top: 20px;
     }
 
@@ -801,7 +805,7 @@ header {
         }
       }
 
-      .logo+* {
+      .logo + * {
         margin-top: 15px;
       }
 
@@ -810,7 +814,8 @@ header {
 
         p {
           line-height: 24px;
-          width: 335px;
+          max-width: 335px;
+          width: 100%;
           margin: 0 auto;
         }
 
@@ -818,7 +823,7 @@ header {
           margin: 0 auto;
         }
 
-        p+* {
+        p + * {
           margin-top: 20px;
         }
       }
@@ -836,12 +841,9 @@ footer {
     padding-bottom: 70px;
 
     .logo-footer {
-      max-width: 430px;
-      max-height: 89px;
-      object-fit: contain;
+      height: 89px;
 
       img {
-        width: 100%;
         height: inherit;
       }
     }
@@ -855,7 +857,7 @@ footer {
         color: #f5f5f5;
       }
 
-      a+* {
+      a + * {
         margin-top: 5px;
       }
 
@@ -879,7 +881,7 @@ footer {
         }
       }
 
-      .contato+* {
+      .contato + * {
         margin-top: 5px;
       }
 
@@ -890,7 +892,7 @@ footer {
           margin-top: 0;
         }
 
-        a+* {
+        a + * {
           margin-left: 10px;
         }
 
@@ -916,7 +918,7 @@ footer {
       }
 
       .box-left {
-        a+* {
+        a + * {
           margin-left: 70px;
         }
       }
@@ -935,7 +937,7 @@ footer {
       margin-right: 150px;
       max-width: 545px;
 
-      h2+* {
+      h2 + * {
         margin-top: 78px;
       }
     }
@@ -956,7 +958,7 @@ footer {
       margin: 0 auto;
     }
 
-    p+* {
+    p + * {
       margin-top: 100px;
     }
 
@@ -966,20 +968,19 @@ footer {
       margin-bottom: 0;
     }
 
-    h2+* {
+    h2 + * {
       margin-top: 26px;
     }
-
-
 
     .grid-equipe {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       row-gap: 60px;
+      column-gap: 20px;
 
       .card-equipe {
-        max-width: 420px;
+        max-width: 100%;
         text-align: center;
 
         img {
@@ -987,12 +988,11 @@ footer {
           object-fit: cover;
         }
 
-        img+* {
+        img + * {
           margin-top: 25px;
         }
 
-
-        h3+* {
+        h3 + * {
           margin-top: 15px;
         }
 
@@ -1017,7 +1017,11 @@ footer {
     content: "";
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
     position: absolute;
     top: 0;
     left: 0;
@@ -1058,14 +1062,14 @@ footer {
   justify-content: space-between;
 }
 
-// Interna AGENDA 
+// Interna AGENDA
 
 #agenda-interna {
   color: #fff;
   padding-top: 70px;
   padding-bottom: 100px;
 
-  h1+* {
+  h1 + * {
     margin-top: 65px;
   }
 }
@@ -1082,24 +1086,32 @@ footer {
 #eventos {
   color: #fff;
 
-  .container-havana+* {
-    margin-top: 100px;
+  .container-havana + * {
+    margin-top: 5.21vw;
   }
 
   .grid-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-
     .box-image {
-      max-height: 540px;
       width: 100%;
       position: relative;
 
-      img {
+      a {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        display: inline-block;
+        aspect-ratio: 1.77777777778;
+
+        img {
+          aspect-ratio: inherit;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      a + a {
+        display: none;
       }
     }
 
@@ -1133,7 +1145,36 @@ footer {
   }
 }
 
+@media only screen and (max-width: 1600px) {
+  @import "responsive/1600";
+}
+
+@media only screen and (max-width: 1400px) {
+  @import "responsive/1400";
+}
 
 @media only screen and (max-width: 1200px) {
-  @import "./responsive/1200.css";
+  @import "responsive/1200";
 }
+
+@media only screen and (max-width: 1024px) {
+  @import "responsive/1024";
+
+  .sumir {
+    display: none;
+  }
+  
+  .aparecer {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  @import "responsive/768";
+}
+
+@media only screen and (max-width: 500px) {
+  @import "responsive/500";
+}
+
+

@@ -1,21 +1,99 @@
-@media only screen and (max-width: 1400px) {
-    #redes {
-        .text {
-            .box-text {
-                max-width: 450px;
-                margin-right: 115px;
-            }
-        }
+.bt {
+  max-width: 315px;
+  height: 48px;
+  letter-spacing: 2.5px;
+}
+
+#eventos {
+  .container-havana + * {
+    margin-top: 4.3vw;
+  }
+}
+
+#feedback {
+  .bg {
+    min-height: 600px;
+  }
+  .container-havana {
+    max-width: 955px;
+
+    [class*="titulo-2"] {
+      font-size: 36px;
     }
 
-    #feedback {
-        .container-havana {
-            .box-feedback {
-                .box {
-                    margin: 0 auto;
-                    padding: 60px 40px 70px;
-                }
-            }
+    .box-feedback {
+      .box {
+        max-width: 430px;
+        padding: 33px 20px 35px;
+
+        p {
+          line-height: 20px;
+          font-size: 15px;
         }
+      }
     }
+  }
+}
+
+#contato {
+  .text {
+    .box-text {
+      max-width: 420px;
+      padding: 0 48px 30px;
+
+      .logo {
+        max-width: 147px;
+        margin: -60px auto 0;
+
+        .whatsapp-contato {
+          width: 62px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      [class*="titulo-2"] {
+        font-size: 40px;
+      }
+
+      .triangulo-para-baixo {
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid #fff;
+        bottom: -50px;
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 55px;
+  .container-havana {
+    padding-bottom: 45px;
+
+    .logo-footer {
+      height: 68px;
+    }
+  }
+}
+
+#equipe {
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  [class*="container-havana"] {
+    max-width: 1030px;
+  }
+
+  .container-havana {
+    p + * {
+      margin-top: 55px;
+    }
+
+    .grid-equipe {
+      row-gap: 40px;
+      column-gap: 17px;
+    }
+  }
 }

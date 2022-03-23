@@ -1,68 +1,101 @@
-@media only screen and (max-width:1200px) {
-    .bt.full {
-        max-width: 375px;
-    }
-
-    .sumir {
-        display: none !important;
-    }
-
-    .aparecer {
-        display: block;
-    }
-
-    #degustacao {
-        .text {
-            .box-text {
-                margin-left: 80px;
-            }
-        }
-    }
-
-    #redes {
-        .text {
-            .box-text {
-                max-width: 400px;
-                margin-right: 60px;
-            }
-        }
-    }
-
-    #feedback {
-        .owl-theme {
-            .owl-nav.disabled+.owl-dots {
-                margin-top: 30px;
-            }
-        }
-
-        .container-havana {
-            .aparecer {
-                margin-top: 30px;
-            }
-
-            h2 {
-                text-align: center;
-            }
-
-            .box-feedback {
-                flex-direction: column;
-
-            }
-        }
-
-    }
-
-    #contato {
-        .text {
-            .box-text {
-                .image-absolute {
-                    max-width: 135px;
-                    top: -65px;
-                }
-
-                min-width: 450px;
-                min-height: 325px;
-            }
-        }
-    }
+.bt.full {
+  max-width: 375px;
 }
+
+.sumir {
+  display: none !important;
+}
+
+.aparecer {
+  display: block;
+}
+
+#degustacao {
+  .text {
+    .box-text {
+      margin-left: 80px;
+    }
+  }
+}
+
+#redes {
+  .text {
+    .box-text {
+      max-width: 400px;
+      margin-right: 60px;
+    }
+  }
+}
+
+#feedback {
+  .bg {
+    min-height: unset;
+    padding: 45px 0 35px;
+  }
+
+  .owl-theme {
+    .owl-nav.disabled + .owl-dots {
+      margin-top: 30px;
+    }
+  }
+
+  .container-havana {
+    .aparecer {
+      margin-top: 30px;
+    }
+    [class*="titulo-2"] {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .box-feedback {
+      flex-direction: column;
+    }
+  }
+}
+
+#contato {
+  .text {
+    .box-text {
+      max-width: 350px;
+      padding: 0 30px 25px;
+
+      .logo {
+        max-width: 130px;
+        margin: -50px auto 0;
+
+        .whatsapp-contato {
+          width: 57px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      [class*="titulo-2"] {
+        font-size: 35px;
+      }
+
+      .triangulo-para-baixo {
+        border-left: 45px solid transparent;
+        border-right: 45px solid transparent;
+        border-top: 45px solid #fff;
+        bottom: -45px;
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 50px;
+  .container-havana {
+    padding-bottom: 40px;
+
+    .logo-footer {
+      height: 64px;
+    }
+  }
+}
+
+

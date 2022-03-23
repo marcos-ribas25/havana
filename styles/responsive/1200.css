@@ -1,38 +1,66 @@
-@media only screen and (max-width: 1200px) {
-  .bt.full {
-    max-width: 375px;
-  }
-  .sumir {
-    display: none !important;
-  }
-  .aparecer {
-    display: block;
-  }
-  #degustacao .text .box-text {
-    margin-left: 80px;
-  }
-  #redes .text .box-text {
-    max-width: 400px;
-    margin-right: 60px;
-  }
-  #feedback .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 30px;
-  }
-  #feedback .container-havana .aparecer {
-    margin-top: 30px;
-  }
-  #feedback .container-havana h2 {
-    text-align: center;
-  }
-  #feedback .container-havana .box-feedback {
-    flex-direction: column;
-  }
-  #contato .text .box-text {
-    min-width: 450px;
-    min-height: 325px;
-  }
-  #contato .text .box-text .image-absolute {
-    max-width: 135px;
-    top: -65px;
-  }
+.bt.full {
+  max-width: 375px;
+}
+.sumir {
+  display: none !important;
+}
+.aparecer {
+  display: block;
+}
+#degustacao .text .box-text {
+  margin-left: 80px;
+}
+#redes .text .box-text {
+  max-width: 400px;
+  margin-right: 60px;
+}
+#feedback .bg {
+  min-height: unset;
+  padding: 45px 0 35px;
+}
+#feedback .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 30px;
+}
+#feedback .container-havana .aparecer {
+  margin-top: 30px;
+}
+#feedback .container-havana [class*="titulo-2"] {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+#feedback .container-havana .box-feedback {
+  flex-direction: column;
+}
+#contato .text .box-text {
+  max-width: 350px;
+  padding: 0 30px 25px;
+}
+#contato .text .box-text .logo {
+  max-width: 130px;
+  margin: -50px auto 0;
+}
+#contato .text .box-text .logo .whatsapp-contato {
+  width: 57px;
+}
+#contato .text .box-text .logo .whatsapp-contato img {
+  width: 100%;
+}
+#contato .text .box-text [class*="titulo-2"] {
+  font-size: 35px;
+}
+#contato .text .box-text .triangulo-para-baixo {
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-top: 45px solid #fff;
+  bottom: -45px;
+}
+footer {
+  padding-top: 50px;
+}
+footer .container-havana {
+  padding-bottom: 40px;
+}
+footer .container-havana .logo-footer {
+  height: 64px;
 }

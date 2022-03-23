@@ -1,10 +1,71 @@
-@media only screen and (max-width: 1400px) {
-  #redes .text .box-text {
-    max-width: 450px;
-    margin-right: 115px;
-  }
-  #feedback .container-havana .box-feedback .box {
-    margin: 0 auto;
-    padding: 60px 40px 70px;
-  }
+.bt {
+  max-width: 315px;
+  height: 48px;
+  letter-spacing: 2.5px;
+}
+#eventos .container-havana + * {
+  margin-top: 4.3vw;
+}
+#feedback .bg {
+  min-height: 600px;
+}
+#feedback .container-havana {
+  max-width: 955px;
+}
+#feedback .container-havana [class*="titulo-2"] {
+  font-size: 36px;
+}
+#feedback .container-havana .box-feedback .box {
+  max-width: 430px;
+  padding: 33px 20px 35px;
+}
+#feedback .container-havana .box-feedback .box p {
+  line-height: 20px;
+  font-size: 15px;
+}
+#contato .text .box-text {
+  max-width: 420px;
+  padding: 0 48px 30px;
+}
+#contato .text .box-text .logo {
+  max-width: 147px;
+  margin: -60px auto 0;
+}
+#contato .text .box-text .logo .whatsapp-contato {
+  width: 62px;
+}
+#contato .text .box-text .logo .whatsapp-contato img {
+  width: 100%;
+}
+#contato .text .box-text [class*="titulo-2"] {
+  font-size: 40px;
+}
+#contato .text .box-text .triangulo-para-baixo {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #fff;
+  bottom: -50px;
+}
+footer {
+  padding-top: 55px;
+}
+footer .container-havana {
+  padding-bottom: 45px;
+}
+footer .container-havana .logo-footer {
+  height: 68px;
+}
+#equipe {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+#equipe [class*="container-havana"] {
+  max-width: 1030px;
+}
+#equipe .container-havana p + * {
+  margin-top: 55px;
+}
+#equipe .container-havana .grid-equipe {
+  row-gap: 40px;
+  column-gap: 17px;
 }

@@ -1,0 +1,18 @@
+header .logo img {
+  height: 60px;
+}
+.text-image .text {
+  padding: 40px 20px;
+}
+.text-image h2 + * {
+  margin-top: 10px;
+}
+.text-image p + * {
+  margin-top: 15px;
+}
+#feedback .container-havana .aparecer {
+  margin-top: 20px;
+}
+#contato .text {
+  padding: 65px 15px;
+}

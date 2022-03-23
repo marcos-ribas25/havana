@@ -1,136 +1,286 @@
-@media only screen and (max-width: 1024px) {
-   .bt {
-      max-width: 315px;
-   }
-
-   .bt.full {
-      max-width: 325px;
-   }
-
-   header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      padding: 20px 15px 0;
-
-      .logo {
-         max-width: 250px;
-         margin: unset;
-      }
-
-      nav {
-         display: none;
-      }
-
-      .block-bar {
-         display: block;
-         margin-left: auto;
-      }
-   }
-
-   #banner {
-      .container-havana {
-         .text {
-            h1 {
-               max-width: 701px;
-            }
-
-            h1+* {
-               margin-top: 3vh;
-            }
-         }
-      }
-   }
-
-   #sobre {
-      .container-havana {
-         padding-top: 25px;
-         padding-bottom: 25px;
-      }
-   }
-
-   #contador {
-      align-items: center;
-      aspect-ratio: unset;
-      background-position: left;
-
-      .container-havana {
-         padding-top: 30px;
-         padding-bottom: 30px;
-
-         .contador {
-            flex-direction: column;
-
-            .box-contador {
-               p {
-                  margin-top: 0;
-               }
-            }
-
-            .box-contador+.box-contador {
-               margin-top: 50px;
-            }
-         }
-
-         .contador+* {
-            margin-top: 75px;
-         }
-      }
-   }
-
-   #servicos {
-      .bg {
-         background-position: center;
-
-         &::after {
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-         }
-      }
-
-      .container-havana {
-         padding-top: 25px;
-         padding-bottom: 25px;
-      }
-   }
-
-   .text-image {
-      text-align: -webkit-center;
-
-      .image {
-         display: none !important;
-      }
-
-      .text {
-         padding: 50px 20px;
-         justify-content: center !important;
-
-         .box-text {
-            margin: 0 !important;
-         }
-      }
-   }
-
-   #degustacao {
-      .text {
-         background-color: var(--azul);
-      }
-   }
-
-   #contato {
-      .text {
-         padding: 90px 30px 30px;
-      }
-   }
-
-   #feedback {
-      .container-havana {
-         .box-feedback {
-            .box {
-               margin: 0 auto;
-            }
-         }
-      }
-   }
-
+.bt {
+  max-width: 315px;
 }
+
+.bt.full {
+  max-width: 325px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 15px 0;
+
+  .logo {
+    margin: unset;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .block-bar {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+#banner {
+  .container-havana {
+    .text {
+      h1 {
+        max-width: 701px;
+      }
+
+      h1 + * {
+        margin-top: 3vh;
+      }
+    }
+  }
+}
+
+#sobre {
+  .container-havana {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+#contador {
+  align-items: center;
+  aspect-ratio: unset;
+  background-position: left;
+
+  .container-havana {
+    padding: 40px 15px;
+
+    .contador {
+      flex-direction: column;
+
+      .box-contador {
+        p {
+          margin-top: 0;
+        }
+      }
+
+      .box-contador + .box-contador {
+        margin-top: 20px;
+      }
+    }
+
+    .contador + * {
+      margin-top: 35px;
+    }
+  }
+}
+
+#servicos {
+  .bg {
+    background-position: center;
+
+    &::after {
+      background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+
+  .container-havana {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.text-image {
+  text-align: -webkit-center;
+
+  .image {
+    display: none !important;
+  }
+
+  .text {
+    padding: 50px 20px;
+    justify-content: center !important;
+
+    .box-text {
+      margin: 0 !important;
+      max-width: 500px;
+    }
+  }
+}
+
+#degustacao {
+  .text {
+    background-color: var(--azul);
+  }
+
+  .divisor-half:nth-child(even) {
+    .text {
+      background-color: var(--vermelho);
+    }
+  }
+}
+
+#contato {
+  .image {
+    display: none;
+  }
+
+  .text {
+    padding: 100px 15px;
+
+    .box-text {
+      .logo {
+        max-width: 120px;
+        margin: -40px auto 0;
+
+        .whatsapp-contato {
+          width: 52px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      [class*="titulo-2"] {
+        font-size: 30px;
+      }
+
+      .triangulo-para-baixo {
+        border-left: 38px solid transparent;
+        border-right: 38px solid transparent;
+        border-top: 38px solid #fff;
+        bottom: -38px;
+      }
+    }
+  }
+}
+
+#feedback {
+  .container-havana {
+    .box-feedback {
+      .box {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.bg-eventos {
+  padding-top: 140px;
+}
+
+#eventos {
+  .container-havana + * {
+    margin-top: 3vw;
+  }
+  .grid-images {
+    grid-template-columns: repeat(1, 1fr);
+    .legenda {
+      opacity: 1;
+    }
+  }
+}
+
+.background-generic {
+  .bg {
+    min-height: unset;
+    padding: 30px 0;
+
+    .text {
+      text-align: center;
+      max-width: 590px;
+      margin: 0 auto;
+      h2 {
+        max-width: 473px;
+        margin: 0 auto;
+      }
+      h2 + * {
+        margin-top: 15px;
+      }
+      .bt {
+        margin: 20px auto 0;
+      }
+
+      ul {
+        max-width: 345px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.divisor-half {
+  .text {
+    max-width: 100%;
+  }
+}
+
+footer {
+  padding-top: 35px;
+
+  .container-havana {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+
+    .logo-footer {
+      height: 55px;
+    }
+
+    .links-footer {
+      .contato + * {
+        margin-top: 15px;
+      }
+      
+      .icon a + * {
+        margin-left: 20px;
+      }
+    }
+
+    [class*="titulo-5"] {
+      margin-bottom: 13px;
+    }
+  }
+
+  .links-footer + .links-footer {
+    margin-top: 20px;
+  }
+
+  .contato {
+    text-align: left;
+  }
+
+  .barra-footer {
+    padding-bottom: 10px;
+
+    .box-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 15px;
+
+      a + a {
+        margin: 15px 0 0 !important;
+      }
+    }
+  }
+}
+
+#equipe {
+  [class*="container-havana"] {
+    max-width: 700px;
+
+    .grid-equipe {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+      column-gap: 15px;
+    }
+  }
+}
+

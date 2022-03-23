@@ -1,0 +1,53 @@
+header .logo img {
+  height: 50px;
+}
+.bt {
+  max-width: 275px;
+}
+.bt.full {
+  max-width: 345px;
+}
+#banner .container-juliano .text-banner {
+  max-width: 425px;
+  margin-bottom: 100px;
+}
+#sobre .bg {
+  min-height: 600px;
+}
+#eventos .grid-images .legenda {
+  height: 70px;
+}
+#feedback .container-havana [class*="titulo-2"] {
+  font-size: 30px;
+}
+.text-image h2 {
+  font-size: 26px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#contato .text .box-text {
+  padding: 0 20px 20px;
+}
+#contato .text .box-text .logo {
+  max-width: 105px;
+  margin: -45px auto 0;
+}
+#contato .text .box-text .logo + * {
+  margin-top: 10px;
+}
+#contato .text .box-text .content p {
+  line-height: 19px;
+  font-size: 14px;
+}
+#contato .text .box-text .content p + * {
+  margin-top: 10px;
+}
+#contato .text .box-text [class*="titulo-2"] {
+  font-size: 27px;
+}
+#contato .text .box-text .triangulo-para-baixo {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #fff;
+  bottom: -29px;
+}

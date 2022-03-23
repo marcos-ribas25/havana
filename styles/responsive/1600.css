@@ -1,0 +1,57 @@
+.bt {
+  max-width: 335px;
+  height: 50px;
+  letter-spacing: 2.8px;
+}
+#feedback .container-havana {
+  max-width: 1155px;
+}
+#feedback .container-havana [class*="titulo-2"] {
+  font-size: 45px;
+}
+#feedback .container-havana .box-feedback .box {
+  max-width: 430px;
+  padding: 55px 30px;
+}
+#contato .text .box-text {
+  max-width: 500px;
+  padding: 0 60px 35px;
+}
+#contato .text .box-text .logo {
+  max-width: 165px;
+  margin: -70px auto 0;
+}
+#contato .text .box-text .logo .whatsapp-contato {
+  width: 67px;
+}
+#contato .text .box-text .logo .whatsapp-contato img {
+  width: 100%;
+}
+#contato .text .box-text [class*="titulo-2"] {
+  font-size: 45px;
+}
+#contato .text .box-text .triangulo-para-baixo {
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #fff;
+  bottom: -60px;
+}
+footer {
+  padding-top: 65px;
+}
+footer .container-havana {
+  padding-bottom: 55px;
+}
+footer .container-havana .logo-footer {
+  height: 75px;
+}
+#equipe {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+#equipe [class*="container-havana"] {
+  max-width: 1230px;
+}
+#equipe .container-havana p + * {
+  margin-top: 75px;
+}
