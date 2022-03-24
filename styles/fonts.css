@@ -218,4 +218,7 @@ td {
   [class*='titulo-1'] {
     font-size: 30px;
   }
+  [class*='link-2'] {
+    font-size: 13px;
+  }
 }

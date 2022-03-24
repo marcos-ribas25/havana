@@ -1,6 +1,6 @@
 .bt {
   max-width: 335px;
-  height: 50px;
+  height: 49px;
   letter-spacing: 2.8px;
 }
 #feedback .container-havana {
@@ -54,4 +54,10 @@ footer .container-havana .logo-footer {
 }
 #equipe .container-havana p + * {
   margin-top: 75px;
+}
+#sobre-interna .text .box-text {
+  max-width: 500px;
+}
+#sobre-interna .text .box-text h2 + * {
+  margin-top: 50px;
 }

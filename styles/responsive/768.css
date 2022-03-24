@@ -1,5 +1,17 @@
+.bt.full {
+  max-width: 310px;
+}
+.whatsapp {
+  max-width: 60px;
+  max-height: 60px;
+  right: 15px;
+  bottom: 15px;
+}
 header .logo img {
   height: 60px;
+}
+#banner .bg.interna {
+  padding-top: 120px;
 }
 .text-image .text {
   padding: 40px 20px;
@@ -14,5 +26,45 @@ header .logo img {
   margin-top: 20px;
 }
 #contato .text {
-  padding: 65px 15px;
+  padding: 55px 15px;
+}
+#contato .box-text .logo .whatsapp-contato {
+  width: 46px;
+}
+#contato .text-midias h2 {
+  max-width: 420px;
+  margin: 0 auto;
+}
+#contato .text-midias p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+#contato .text-midias h2 + * {
+  margin-top: 15px;
+}
+#contato .bt {
+  height: 35px;
+  max-width: 250px;
+}
+#contato [class*='link-2'] {
+  font-size: 13px;
+}
+.contato-interna .text {
+  padding-top: 75px !important;
+}
+footer .container-havana .logo-footer {
+  height: 50px;
+}
+#equipe {
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+#equipe .grid-equipe.aparecer {
+  margin-top: 25px;
+}
+#equipe [class*="container-havana"] h2 + * {
+  margin-top: 10px;
+}
+#agenda-interna [class*='titulo-1'] {
+  font-size: 47px;
 }

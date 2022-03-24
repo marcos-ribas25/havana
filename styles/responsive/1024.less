@@ -1,9 +1,26 @@
 .bt {
-  max-width: 315px;
+  max-width: 270px;
+  letter-spacing: 1.9px;
 }
 
 .bt.full {
   max-width: 325px;
+}
+
+.whatsapp {
+  max-width: 70px;
+  max-height: 70px;
+
+  right: 18px;
+  bottom: 18px;
+}
+
+.sumir {
+  display: none !important;
+}
+
+.aparecer {
+  display: block !important;
 }
 
 header {
@@ -28,13 +45,20 @@ header {
 }
 
 #banner {
+  .bg.interna {
+    min-height: unset;
+    padding-top: 16vw;
+    padding-bottom: 0;
+  }
+
+
   .container-havana {
     .text {
       h1 {
         max-width: 701px;
       }
 
-      h1 + * {
+      h1+* {
         margin-top: 3vh;
       }
     }
@@ -65,12 +89,12 @@ header {
         }
       }
 
-      .box-contador + .box-contador {
+      .box-contador+.box-contador {
         margin-top: 20px;
       }
     }
 
-    .contador + * {
+    .contador+* {
       margin-top: 35px;
     }
   }
@@ -81,11 +105,9 @@ header {
     background-position: center;
 
     &::after {
-      background-image: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0) 100%
-      );
+      background-image: linear-gradient(to top,
+          rgba(0, 0, 0, 0.8) 0%,
+          rgba(0, 0, 0, 0) 100%);
     }
   }
 
@@ -103,7 +125,7 @@ header {
   }
 
   .text {
-    padding: 50px 20px;
+    padding: 45px 20px;
     justify-content: center !important;
 
     .box-text {
@@ -125,6 +147,15 @@ header {
   }
 }
 
+.divisor-half {
+  flex-direction: column;
+  align-items: center;
+
+  .text {
+    max-width: 100%;
+  }
+}
+
 #contato {
   .image {
     display: none;
@@ -140,6 +171,7 @@ header {
 
         .whatsapp-contato {
           width: 52px;
+
           img {
             width: 100%;
           }
@@ -154,9 +186,28 @@ header {
         border-left: 38px solid transparent;
         border-right: 38px solid transparent;
         border-top: 38px solid #fff;
-        bottom: -38px;
+        bottom: -37px;
       }
     }
+  }
+
+  .text-midias {
+    text-align: center;
+
+    .bt {
+      margin: 30px auto 0;
+    }
+
+    a+* {
+      margin-top: 25px !important;
+    }
+  }
+}
+
+.contato-interna {
+  .text {
+    padding: 85px 15px !important;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -175,11 +226,13 @@ header {
 }
 
 #eventos {
-  .container-havana + * {
+  .container-havana+* {
     margin-top: 3vw;
   }
+
   .grid-images {
     grid-template-columns: repeat(1, 1fr);
+
     .legenda {
       opacity: 1;
     }
@@ -195,13 +248,16 @@ header {
       text-align: center;
       max-width: 590px;
       margin: 0 auto;
+
       h2 {
         max-width: 473px;
         margin: 0 auto;
       }
-      h2 + * {
+
+      h2+* {
         margin-top: 15px;
       }
+
       .bt {
         margin: 20px auto 0;
       }
@@ -211,12 +267,6 @@ header {
         margin: 0 auto;
       }
     }
-  }
-}
-
-.divisor-half {
-  .text {
-    max-width: 100%;
   }
 }
 
@@ -234,11 +284,11 @@ footer {
     }
 
     .links-footer {
-      .contato + * {
+      .contato+* {
         margin-top: 15px;
       }
-      
-      .icon a + * {
+
+      .icon a+* {
         margin-left: 20px;
       }
     }
@@ -248,7 +298,7 @@ footer {
     }
   }
 
-  .links-footer + .links-footer {
+  .links-footer+.links-footer {
     margin-top: 20px;
   }
 
@@ -265,7 +315,7 @@ footer {
       align-items: center;
       margin-bottom: 15px;
 
-      a + a {
+      a+a {
         margin: 15px 0 0 !important;
       }
     }
@@ -274,7 +324,11 @@ footer {
 
 #equipe {
   [class*="container-havana"] {
-    max-width: 700px;
+    max-width: 1024px;
+
+    h2+* {
+      margin-top: 20px;
+    }
 
     .grid-equipe {
       grid-template-columns: repeat(2, 1fr);
@@ -282,5 +336,41 @@ footer {
       column-gap: 15px;
     }
   }
+
+  .grid-equipe.aparecer {
+    margin-top: 30px;
+
+  }
 }
 
+#agenda-interna {
+  padding-top: 0;
+
+  [class*='titulo-1'] {
+    font-size: 60px;
+  }
+
+  h1+* {
+    margin-top: 15px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+#sobre-interna {
+  .text {
+    .box-text {
+      h2+* {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.servicos-interna {
+  .bg {
+    background-position: center;
+  }
+}

@@ -1,24 +1,35 @@
 header {
   .logo {
     img {
-      height: 50px;
+      height: 45px;
     }
   }
 }
 
 .bt {
   max-width: 275px;
+  height: 38px;
+  letter-spacing: 1.7px;
+
+  .link-2 {
+    font-size: 13px;
+  }
 }
 
 .bt.full {
-  max-width: 345px;
+  max-width: 280px;
 }
 
 #banner {
-  .container-juliano {
-    .text-banner {
-      max-width: 425px;
-      margin-bottom: 100px;
+  .bg.interna {
+    padding-top: 100px;
+  }
+
+  .container-havana {
+    .text {
+      h1 {
+        max-width: 440px;
+      }
     }
   }
 }
@@ -59,21 +70,30 @@ header {
       padding: 0 20px 20px;
 
       .logo {
-        max-width: 105px;
-        margin: -45px auto 0;
+        max-width: 90px;
+        margin: -50px auto 0;
+
+        .whatsapp-contato {
+          width: 40px;
+        }
       }
-      .logo + * {
+
+
+
+
+      .logo+* {
         margin-top: 10px;
-    }
+      }
 
       .content {
         p {
           line-height: 19px;
           font-size: 14px;
         }
-        p + * {
-          margin-top: 10px;
-      }
+
+        p+* {
+          margin-top: 15px;
+        }
       }
 
       [class*="titulo-2"] {
@@ -87,5 +107,66 @@ header {
         bottom: -29px;
       }
     }
+  }
+
+  .text-midias {
+    text-align: center;
+
+    .bt {
+      margin: 20px auto 0;
+    }
+
+    a+* {
+      margin-top: 15px !important;
+    }
+  }
+}
+
+footer {
+  .container-havana {
+    .logo-footer {
+      height: 45px;
+    }
+  }
+}
+
+#equipe {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .grid-equipe.aparecer {
+    margin-top: 30px;
+
+    .card-equipe {
+      max-width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+  [class*="container-havana"] {
+
+    h2+* {
+      margin-top: 5px;
+    }
+  }
+
+  .grid-equipe.aparecer {
+    margin-top: 20px;
+  }
+}
+
+#sobre-interna {
+  .text {
+    .box-text {
+      h2+* {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+#agenda-interna {
+  [class*='titulo-1'] {
+    font-size: 35px;
   }
 }

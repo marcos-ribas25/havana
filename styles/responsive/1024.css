@@ -1,8 +1,21 @@
 .bt {
-  max-width: 315px;
+  max-width: 270px;
+  letter-spacing: 1.9px;
 }
 .bt.full {
   max-width: 325px;
+}
+.whatsapp {
+  max-width: 70px;
+  max-height: 70px;
+  right: 18px;
+  bottom: 18px;
+}
+.sumir {
+  display: none !important;
+}
+.aparecer {
+  display: block !important;
 }
 header {
   display: flex;
@@ -20,6 +33,11 @@ header nav {
 header .block-bar {
   display: block;
   margin-left: auto;
+}
+#banner .bg.interna {
+  min-height: unset;
+  padding-top: 16vw;
+  padding-bottom: 0;
 }
 #banner .container-havana .text h1 {
   max-width: 701px;
@@ -68,7 +86,7 @@ header .block-bar {
   display: none !important;
 }
 .text-image .text {
-  padding: 50px 20px;
+  padding: 45px 20px;
   justify-content: center !important;
 }
 .text-image .text .box-text {
@@ -80,6 +98,13 @@ header .block-bar {
 }
 #degustacao .divisor-half:nth-child(even) .text {
   background-color: var(--vermelho);
+}
+.divisor-half {
+  flex-direction: column;
+  align-items: center;
+}
+.divisor-half .text {
+  max-width: 100%;
 }
 #contato .image {
   display: none;
@@ -104,7 +129,20 @@ header .block-bar {
   border-left: 38px solid transparent;
   border-right: 38px solid transparent;
   border-top: 38px solid #fff;
-  bottom: -38px;
+  bottom: -37px;
+}
+#contato .text-midias {
+  text-align: center;
+}
+#contato .text-midias .bt {
+  margin: 30px auto 0;
+}
+#contato .text-midias a + * {
+  margin-top: 25px !important;
+}
+.contato-interna .text {
+  padding: 85px 15px !important;
+  margin-bottom: 0 !important;
 }
 #feedback .container-havana .box-feedback .box {
   margin: 0 auto;
@@ -143,9 +181,6 @@ header .block-bar {
 .background-generic .bg .text ul {
   max-width: 345px;
   margin: 0 auto;
-}
-.divisor-half .text {
-  max-width: 100%;
 }
 footer {
   padding-top: 35px;
@@ -187,10 +222,34 @@ footer .barra-footer .box-left a + a {
   margin: 15px 0 0 !important;
 }
 #equipe [class*="container-havana"] {
-  max-width: 700px;
+  max-width: 1024px;
+}
+#equipe [class*="container-havana"] h2 + * {
+  margin-top: 20px;
 }
 #equipe [class*="container-havana"] .grid-equipe {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
   column-gap: 15px;
+}
+#equipe .grid-equipe.aparecer {
+  margin-top: 30px;
+}
+#agenda-interna {
+  padding-top: 0;
+}
+#agenda-interna [class*='titulo-1'] {
+  font-size: 60px;
+}
+#agenda-interna h1 + * {
+  margin-top: 15px;
+}
+#agenda-interna img {
+  max-width: 100%;
+}
+#sobre-interna .text .box-text h2 + * {
+  margin-top: 15px;
+}
+.servicos-interna .bg {
+  background-position: center;
 }
