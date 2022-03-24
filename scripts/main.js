@@ -34,6 +34,30 @@ $(document).ready(function () {
       }
   })
 
+  $('.owl-equipe').owlCarousel({
+   loop:true,
+   margin:20,
+   nav:true,
+   dots:false,
+   items: 3,
+   responsive  : {
+      0: {
+         items: 1,
+         margin: 0,
+      },
+      500: {
+         items: 2,
+         margin: 10
+      },
+      992: {
+         items: 3,
+         margin: 10
+      },
+
+   }
+})
+
+
 
 
    if ($('.cep-mask').length > 0) {

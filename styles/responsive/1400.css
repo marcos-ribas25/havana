@@ -1,6 +1,6 @@
 .bt {
   max-width: 315px;
-  height: 48px;
+  height: 46px;
   letter-spacing: 2.5px;
 }
 #eventos .container-havana + * {
@@ -68,4 +68,10 @@ footer .container-havana .logo-footer {
 #equipe .container-havana .grid-equipe {
   row-gap: 40px;
   column-gap: 17px;
+}
+#sobre-interna .text .box-text {
+  max-width: 469px;
+}
+#sobre-interna .text .box-text h2 + * {
+  margin-top: 40px;
 }

@@ -218,6 +218,9 @@ td {
   [class*='titulo-1'] {
     font-size: 30px;
   }
+  [class*='link-2'] {
+    font-size: 13px;
+  }
 }
 :root {
   --vermelho: #d1002b;
@@ -481,7 +484,6 @@ header .block-bar {
   background-size: cover;
   position: relative;
   z-index: 1;
-  background-position: top;
   display: flex;
   background-attachment: fixed;
 }
@@ -960,6 +962,7 @@ footer .barra-footer .container-havana .box-left a + * {
 #sobre-interna .text .box-text {
   margin-right: 150px;
   max-width: 545px;
+  margin: 0 auto;
 }
 #sobre-interna .text .box-text h2 + * {
   margin-top: 78px;
@@ -1016,6 +1019,9 @@ footer .barra-footer .container-havana .box-left a + * {
   display: -webkit-box;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
+}
+#equipe .container-havana .grid-equipe.aparecer {
+  display: none;
 }
 #beleza-bar .bg::after {
   content: "";
@@ -1112,7 +1118,7 @@ footer .barra-footer .container-havana .box-left a + * {
 @media only screen and (max-width: 1600px) {
   .bt {
     max-width: 335px;
-    height: 50px;
+    height: 49px;
     letter-spacing: 2.8px;
   }
   #feedback .container-havana {
@@ -1167,11 +1173,17 @@ footer .barra-footer .container-havana .box-left a + * {
   #equipe .container-havana p + * {
     margin-top: 75px;
   }
+  #sobre-interna .text .box-text {
+    max-width: 500px;
+  }
+  #sobre-interna .text .box-text h2 + * {
+    margin-top: 50px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .bt {
     max-width: 315px;
-    height: 48px;
+    height: 46px;
     letter-spacing: 2.5px;
   }
   #eventos .container-havana + * {
@@ -1240,16 +1252,21 @@ footer .barra-footer .container-havana .box-left a + * {
     row-gap: 40px;
     column-gap: 17px;
   }
+  #sobre-interna .text .box-text {
+    max-width: 469px;
+  }
+  #sobre-interna .text .box-text h2 + * {
+    margin-top: 40px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .bt.full {
     max-width: 375px;
   }
-  .sumir {
-    display: none !important;
-  }
-  .aparecer {
-    display: block;
+  .bt {
+    max-width: 280px;
+    height: 43px;
+    letter-spacing: 2.1px;
   }
   #degustacao .text .box-text {
     margin-left: 80px;
@@ -1257,6 +1274,12 @@ footer .barra-footer .container-havana .box-left a + * {
   #redes .text .box-text {
     max-width: 400px;
     margin-right: 60px;
+  }
+  #feedback .sumir {
+    display: none !important;
+  }
+  #feedback .aparecer {
+    display: block;
   }
   #feedback .bg {
     min-height: unset;
@@ -1302,19 +1325,44 @@ footer .barra-footer .container-havana .box-left a + * {
   footer {
     padding-top: 50px;
   }
+  footer .sumir {
+    display: none !important;
+  }
+  footer .aparecer {
+    display: block;
+  }
   footer .container-havana {
     padding-bottom: 40px;
   }
   footer .container-havana .logo-footer {
     height: 64px;
   }
+  #sobre-interna .text .box-text {
+    max-width: 440px;
+  }
+  #sobre-interna .text .box-text h2 + * {
+    margin-top: 30px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .bt {
-    max-width: 315px;
+    max-width: 270px;
+    letter-spacing: 1.9px;
   }
   .bt.full {
     max-width: 325px;
+  }
+  .whatsapp {
+    max-width: 70px;
+    max-height: 70px;
+    right: 18px;
+    bottom: 18px;
+  }
+  .sumir {
+    display: none !important;
+  }
+  .aparecer {
+    display: block !important;
   }
   header {
     display: flex;
@@ -1332,6 +1380,11 @@ footer .barra-footer .container-havana .box-left a + * {
   header .block-bar {
     display: block;
     margin-left: auto;
+  }
+  #banner .bg.interna {
+    min-height: unset;
+    padding-top: 16vw;
+    padding-bottom: 0;
   }
   #banner .container-havana .text h1 {
     max-width: 701px;
@@ -1380,7 +1433,7 @@ footer .barra-footer .container-havana .box-left a + * {
     display: none !important;
   }
   .text-image .text {
-    padding: 50px 20px;
+    padding: 45px 20px;
     justify-content: center !important;
   }
   .text-image .text .box-text {
@@ -1392,6 +1445,13 @@ footer .barra-footer .container-havana .box-left a + * {
   }
   #degustacao .divisor-half:nth-child(even) .text {
     background-color: var(--vermelho);
+  }
+  .divisor-half {
+    flex-direction: column;
+    align-items: center;
+  }
+  .divisor-half .text {
+    max-width: 100%;
   }
   #contato .image {
     display: none;
@@ -1416,7 +1476,20 @@ footer .barra-footer .container-havana .box-left a + * {
     border-left: 38px solid transparent;
     border-right: 38px solid transparent;
     border-top: 38px solid #fff;
-    bottom: -38px;
+    bottom: -37px;
+  }
+  #contato .text-midias {
+    text-align: center;
+  }
+  #contato .text-midias .bt {
+    margin: 30px auto 0;
+  }
+  #contato .text-midias a + * {
+    margin-top: 25px !important;
+  }
+  .contato-interna .text {
+    padding: 85px 15px !important;
+    margin-bottom: 0 !important;
   }
   #feedback .container-havana .box-feedback .box {
     margin: 0 auto;
@@ -1455,9 +1528,6 @@ footer .barra-footer .container-havana .box-left a + * {
   .background-generic .bg .text ul {
     max-width: 345px;
     margin: 0 auto;
-  }
-  .divisor-half .text {
-    max-width: 100%;
   }
   footer {
     padding-top: 35px;
@@ -1499,12 +1569,36 @@ footer .barra-footer .container-havana .box-left a + * {
     margin: 15px 0 0 !important;
   }
   #equipe [class*="container-havana"] {
-    max-width: 700px;
+    max-width: 1024px;
+  }
+  #equipe [class*="container-havana"] h2 + * {
+    margin-top: 20px;
   }
   #equipe [class*="container-havana"] .grid-equipe {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
     column-gap: 15px;
+  }
+  #equipe .grid-equipe.aparecer {
+    margin-top: 30px;
+  }
+  #agenda-interna {
+    padding-top: 0;
+  }
+  #agenda-interna [class*='titulo-1'] {
+    font-size: 60px;
+  }
+  #agenda-interna h1 + * {
+    margin-top: 15px;
+  }
+  #agenda-interna img {
+    max-width: 100%;
+  }
+  #sobre-interna .text .box-text h2 + * {
+    margin-top: 15px;
+  }
+  .servicos-interna .bg {
+    background-position: center;
   }
   .sumir {
     display: none;
@@ -1514,8 +1608,20 @@ footer .barra-footer .container-havana .box-left a + * {
   }
 }
 @media only screen and (max-width: 768px) {
+  .bt.full {
+    max-width: 310px;
+  }
+  .whatsapp {
+    max-width: 60px;
+    max-height: 60px;
+    right: 15px;
+    bottom: 15px;
+  }
   header .logo img {
     height: 60px;
+  }
+  #banner .bg.interna {
+    padding-top: 120px;
   }
   .text-image .text {
     padding: 40px 20px;
@@ -1530,22 +1636,69 @@ footer .barra-footer .container-havana .box-left a + * {
     margin-top: 20px;
   }
   #contato .text {
-    padding: 65px 15px;
+    padding: 55px 15px;
+  }
+  #contato .box-text .logo .whatsapp-contato {
+    width: 46px;
+  }
+  #contato .text-midias h2 {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  #contato .text-midias p {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  #contato .text-midias h2 + * {
+    margin-top: 15px;
+  }
+  #contato .bt {
+    height: 35px;
+    max-width: 250px;
+  }
+  #contato [class*='link-2'] {
+    font-size: 13px;
+  }
+  .contato-interna .text {
+    padding-top: 75px !important;
+  }
+  footer .container-havana .logo-footer {
+    height: 50px;
+  }
+  #equipe {
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+  #equipe .grid-equipe.aparecer {
+    margin-top: 25px;
+  }
+  #equipe [class*="container-havana"] h2 + * {
+    margin-top: 10px;
+  }
+  #agenda-interna [class*='titulo-1'] {
+    font-size: 47px;
   }
 }
 @media only screen and (max-width: 500px) {
   header .logo img {
-    height: 50px;
+    height: 45px;
   }
   .bt {
     max-width: 275px;
+    height: 38px;
+    letter-spacing: 1.7px;
+  }
+  .bt .link-2 {
+    font-size: 13px;
   }
   .bt.full {
-    max-width: 345px;
+    max-width: 280px;
   }
-  #banner .container-juliano .text-banner {
-    max-width: 425px;
-    margin-bottom: 100px;
+  #banner .bg.interna {
+    padding-top: 100px;
+  }
+  #banner .container-havana .text h1 {
+    max-width: 440px;
   }
   #sobre .bg {
     min-height: 600px;
@@ -1565,8 +1718,11 @@ footer .barra-footer .container-havana .box-left a + * {
     padding: 0 20px 20px;
   }
   #contato .text .box-text .logo {
-    max-width: 105px;
-    margin: -45px auto 0;
+    max-width: 90px;
+    margin: -50px auto 0;
+  }
+  #contato .text .box-text .logo .whatsapp-contato {
+    width: 40px;
   }
   #contato .text .box-text .logo + * {
     margin-top: 10px;
@@ -1576,7 +1732,7 @@ footer .barra-footer .container-havana .box-left a + * {
     font-size: 14px;
   }
   #contato .text .box-text .content p + * {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   #contato .text .box-text [class*="titulo-2"] {
     font-size: 27px;
@@ -1586,5 +1742,40 @@ footer .barra-footer .container-havana .box-left a + * {
     border-right: 30px solid transparent;
     border-top: 30px solid #fff;
     bottom: -29px;
+  }
+  #contato .text-midias {
+    text-align: center;
+  }
+  #contato .text-midias .bt {
+    margin: 20px auto 0;
+  }
+  #contato .text-midias a + * {
+    margin-top: 15px !important;
+  }
+  footer .container-havana .logo-footer {
+    height: 45px;
+  }
+  #equipe {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #equipe .grid-equipe.aparecer {
+    margin-top: 30px;
+  }
+  #equipe .grid-equipe.aparecer .card-equipe {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  #equipe [class*="container-havana"] h2 + * {
+    margin-top: 5px;
+  }
+  #equipe .grid-equipe.aparecer {
+    margin-top: 20px;
+  }
+  #sobre-interna .text .box-text h2 + * {
+    margin-top: 15px;
+  }
+  #agenda-interna [class*='titulo-1'] {
+    font-size: 35px;
   }
 }

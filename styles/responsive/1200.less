@@ -2,13 +2,14 @@
   max-width: 375px;
 }
 
-.sumir {
-  display: none !important;
+.bt {
+  max-width: 280px;
+  height: 43px;
+  letter-spacing: 2.1px;
 }
 
-.aparecer {
-  display: block;
-}
+
+
 
 #degustacao {
   .text {
@@ -28,13 +29,22 @@
 }
 
 #feedback {
+
+  .sumir {
+    display: none !important;
+  }
+
+  .aparecer {
+    display: block;
+  }
+
   .bg {
     min-height: unset;
     padding: 45px 0 35px;
   }
 
   .owl-theme {
-    .owl-nav.disabled + .owl-dots {
+    .owl-nav.disabled+.owl-dots {
       margin-top: 30px;
     }
   }
@@ -43,6 +53,7 @@
     .aparecer {
       margin-top: 30px;
     }
+
     [class*="titulo-2"] {
       max-width: 600px;
       margin: 0 auto;
@@ -67,6 +78,7 @@
 
         .whatsapp-contato {
           width: 57px;
+
           img {
             width: 100%;
           }
@@ -89,6 +101,15 @@
 
 footer {
   padding-top: 50px;
+
+  .sumir {
+    display: none !important;
+  }
+
+  .aparecer {
+    display: block;
+  }
+
   .container-havana {
     padding-bottom: 40px;
 
@@ -98,4 +119,14 @@ footer {
   }
 }
 
+#sobre-interna {
+  .text {
+    .box-text {
+      max-width: 440px;
 
+      h2+* {
+        margin-top: 30px;
+      }
+    }
+  }
+}
